@@ -47,6 +47,7 @@ const FALLBACK_TRANSLATIONS = {
     "skip_link": "Skip to content",
 
     "hero_location": "Tel Aviv, Israel",
+    "hero_name": "Elizur<br><span>Mach</span>",
     "hero_desc": "Senior Full-Stack Team Lead with 14+ years building production-grade systems and leading engineering teams. Specializes in multi-agent AI orchestration, microservices architecture, and TypeScript full-stack delivery. Background in cybersecurity engineering and elite IDF special forces service.",
     "tag_team_lead": "Team Lead",
     "tag_microservices": "Microservices",
@@ -150,12 +151,13 @@ const FALLBACK_TRANSLATIONS = {
     "skip_link": "דלג לתוכן",
 
     "hero_location": "תל אביב, ישראל",
+    "hero_name": "אליצור<br><span>מירון</span>",
     "hero_desc": "מוביל טכני וראש צוות Full-Stack בכיר עם 14+ שנות ניסיון בבניית מערכות ייצור מתקדמות והובלת צוותי פיתוח. מתמחה באורקסטרציית AI מרובת סוכנים, ארכיטקטורת מיקרו-שירותים ופיתוח Full-Stack מבוסס TypeScript. רקע בהנדסת אבטחת מידע ושירות ביחידת כוחות מיוחדים עילית בצה\"ל.",
     "tag_team_lead": "ראש צוות",
     "tag_microservices": "מיקרו-שירותים",
     "tag_cybersecurity": "אבטחת מידע",
     "hero_cta": "← צרו קשר",
-    "profile_alt": "אליצור מך — תמונת פרופיל",
+    "profile_alt": "אליצור מירון — תמונת פרופיל",
 
     "stat_years": "שנות ניסיון",
     "stat_mentored": "מפתחים שהוכשרו",
@@ -242,7 +244,7 @@ const FALLBACK_TRANSLATIONS = {
     "contact_location_label": "מיקום",
     "contact_location_value": "תל אביב, ישראל",
 
-    "footer": "© <time datetime=\"2026\">2026</time> אליצור מך. כל הזכויות שמורות."
+    "footer": "© <time datetime=\"2026\">2026</time> אליצור מירון. כל הזכויות שמורות."
   },
 };
 
@@ -286,6 +288,7 @@ const loadTranslations = async (lang) => {
 
 /* Keys whose translations contain HTML (strong, abbr, time tags) */
 const HTML_KEYS = new Set([
+  'hero_name',
   'about_p2', 'about_p3', 'about_p4',
   'hl_idf_title', 'hl_idf_text',
   'exp_sela_b4', 'exp_nucleix_b1', 'exp_ncr_b1',

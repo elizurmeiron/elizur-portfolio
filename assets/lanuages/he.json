@@ -1,26 +1,104 @@
 {
+  "nav_about": "אודות",
+  "nav_experience": "ניסיון",
+  "nav_skills": "מיומנויות",
+  "nav_contact": "יצירת קשר",
+  "sr_new_tab": " (נפתח בלשונית חדשה)",
+  "skip_link": "דלג לתוכן",
+
+  "hero_location": "תל אביב, ישראל",
+  "hero_name": "אליצור<br><span>מירון</span>",
   "hero_desc": "ראש צוות ומוביל טכני Full-Stack בכיר עם מעל 14 שנות ניסיון בפיתוח מערכות מורכבות והובלת צוותי הנדסה. מתמחה באורקסטרציית AI מרובת סוכנים, ארכיטקטורת מיקרו-שירותים ופיתוח Full-Stack מבוסס TypeScript. בעל רקע בהנדסת אבטחת מידע ושירות ביחידת עילית בצה״ל.",
+  "tag_team_lead": "ראש צוות",
+  "tag_microservices": "מיקרו-שירותים",
+  "tag_cybersecurity": "אבטחת מידע",
+  "hero_cta": "← צרו קשר",
+  "profile_alt": "אליצור מירון — תמונת פרופיל",
+
+  "stat_years": "שנות ניסיון",
+  "stat_mentored": "מפתחים שהוכשרו",
+  "stat_shipped": "מערכות שנשלחו",
+  "stat_pedigree": "רמת לקוחות",
+
+  "section_about": "01 / אודות",
+  "section_experience": "02 / ניסיון",
+  "section_skills": "03 / מיומנויות",
+  "section_contact": "04 / יצירת קשר",
+
   "about_p1": "אני מוביל צוותי פיתוח ובונה יחד איתם את המערכות שהם מספקים. לאורך השנים נעתי בין פיתוח Full-Stack, הובלת צוותים, ייעוץ ופיתוח מונחה AI — תוך שמירה על עבודה hands-on בקוד והרחבת היכולות של הצוות סביבי.",
   "about_p2": "ב־<strong>BMC Software</strong> הובלתי פיתוח פלטפורמה כחלק מצוות מייסד קטן, ובניתי <strong>מערכת אורקסטרציית AI מרובת סוכנים</strong> — המאפשרת תיאום בין סוכנים מתמחים לזרימות עבודה הנדסיות מורכבות באופן אוטונומי. ב־<strong>Checkmarx</strong> השתלבתי בצוות של אחת מחברות ה־AppSec המובילות בעולם, והובלתי פירוק מונוליט למיקרו־שירותים בשיתוף פעולה עם צוותי DevOps.",
   "about_p3": "כ<strong>מפתח בכיר ומרצה ב־Sela College</strong>, הובלתי צוות פיתוח של 10 מפתחים, הגדרתי סטנדרטים טכנולוגיים ארגוניים, והעברתי הכשרות מתקדמות ב־React, Node.js, TypeScript וארכיטקטורה ל־400+ מפתחים — תוך דגש על חשיבה הנדסית ולא רק כתיבת קוד.",
   "about_p4": "לפני הקריירה בהנדסה שירתתי ב<strong>פלס״ר גולני</strong> — יחידת הסיור של חטיבת גולני. הרקע הזה ממשיך להשפיע על הדרך שבה אני ניגש לאתגרים הנדסיים מורכבים.",
+
+  "hl_ai_title": "AI מרובה סוכנים",
   "hl_ai_text": "פיתוח מערכת אורקסטרציה מבוססת סוכנים ב־BMC — תיאום בין סוכנים מתמחים לביצוע משימות הנדסיות מורכבות באופן אוטונומי.",
+  "hl_cyber_title": "הנדסת אבטחת מידע",
   "hl_cyber_text": "קבלן ב־Checkmarx — מובילה עולמית בתחום אבטחת האפליקציות. עבודה על מיגרציה למיקרו־שירותים, שיתוף פעולה עם DevOps והובלת סטנדרטים של פיתוח מאובטח.",
+  "hl_lead_title": "הובלת צוותים",
   "hl_lead_text": "הובלת צוותי פיתוח של עד 10 מפתחים והכשרה של מאות מפתחים בסביבות ארגוניות ואקדמיות.",
+  "hl_idf_title": "פלסר גולני — <abbr title=\"צבא ההגנה לישראל\">צה\"ל</abbr>",
   "hl_idf_text": "יחידת סיור מובחרת של חטיבת גולני. נכה צה״ל.",
+
+  "exp_present": "נוכחי",
+  "exp_previous": "קודם",
+
+  "exp_bmc_role": "מהנדס תשתיות Frontend ומערכות עיצוב — קבלן (דרך קבוצת סלע)",
   "exp_bmc_b1": "תכנון ובנייה של מערכת אורקסטרציית AI מרובת סוכנים — תיאום בין סוכנים לניתוח עיצוב, תכנון ארכיטקטורה, יצירת קוד וסקירה, הפועלת באופן אוטונומי.",
   "exp_bmc_b2": "פיתוח ספריית רכיבי Angular ארגונית מאפס כחלק מצוות מצומצם — כולל הגדרת API, סטנדרטים וארכיטקטורת רכיבים לשימוש רחב.",
   "exp_bmc_b3": "פיתוח pipeline מבוסס AI המשלב Figma Code Connect עם Nx monorepo, ליצירת מסכים type-safe ישירות מעיצובים.",
+
+  "exp_sela_role": "מפתח Full-Stack בכיר ומרצה",
   "exp_sela_b1": "הובלה והנחיה של צוות פיתוח (10 מפתחים) — כולל code reviews, תהליכי Agile והטמעת סטנדרטים — שהובילו לשיפור של כ־30% בקצב האספקה.",
   "exp_sela_b2": "פיתוח והעברת קורסים מתקדמים ב־React, Node.js, TypeScript, ארכיטקטורה ו־Azure ל־400+ מפתחים, עם שביעות רצון של 95%.",
   "exp_sela_b3": "פיתוח והטמעה של למעלה מ־20 מערכות Full-Stack סקיילביליות מבוססות Node.js, React ו־AWS.",
+  "exp_sela_b4": "<strong>Checkmarx (<time datetime=\"2018-07\">07/2018</time>–<time datetime=\"2019-08\">08/2019</time>):</strong> משובץ כקבלן אצל מובילה עולמית ב-AppSec — פירוק מונוליט גדול למיקרו-שירותים, שיתוף פעולה עם DevOps ב-CI/CD, מודרניזציה של ASPX עם React.",
+
+  "exp_ituran_role": "מפתח Full-Stack",
   "exp_ituran_b1": "הטמעת React במערכות .aspx legacy והובלת תהליך מודרניזציה של שכבת ה־Frontend.",
   "exp_ituran_b2": "שילוב כלי פיתוח מבוססי AI (כגון Cursor ו־GitHub Copilot) לשיפור פרודוקטיביות והטמעת שיטות עבודה מתקדמות.",
+
+  "exp_landa_role": "מפתח Full-Stack",
   "exp_landa_b1": "הובלת מעבר מ־TFS ל־Azure DevOps כחלק מתהליך DevOps ארגוני.",
   "exp_landa_b2": "מודרניזציה של קוד C++ legacy לצורך שילוב בתהליכי CI/CD מבוססי .NET Core.",
-  "exp_nucleix_b1": "פיתוח פלטפורמת SaaS תואמת HIPAA/FDA עבור פעילות ביוטכנולוגית בארה״ב — כולל backend ב־Node.js, frontend ב־Angular ושכבת אבטחה למידע רגיש.",
-  "exp_ncr_b1": "הובלת פיתוח מערכת POS בקנה מידה גבוה עבור לקוחות בצפון אמריקה — backend ב־C# ו־ASP.NET.",
+
+  "exp_nucleix_role": "מפתח Full-Stack",
+  "exp_nucleix_b1": "פיתוח פלטפורמת SaaS תואמת <abbr title=\"Health Insurance Portability and Accountability Act\">HIPAA</abbr>/<abbr title=\"Food and Drug Administration\">FDA</abbr> עבור פעילות ביוטכנולוגית בארה״ב — כולל backend ב־Node.js, frontend ב־Angular ושכבת אבטחה למידע רגיש.",
+
+  "exp_ncr_role": "מפתח Full-Stack בכיר",
+  "exp_ncr_b1": "הובלת פיתוח מערכת <abbr title=\"Point of Sale\">POS</abbr> בקנה מידה גבוה עבור לקוחות בצפון אמריקה — backend ב־C# ו־ASP.NET.",
   "exp_ncr_b2": "עבודה עם RabbitMQ לתקשורת מבוססת תורים במערכות פיננסיות.",
   "exp_ncr_b3": "פתרון תקלות קריטיות של עקביות נתונים במערכות SQL בסביבת production.",
-  "exp_intel_b1": "תכנון ופיתוח עצמאי של תשתית בדיקות אוטומטיות (Coded UI) לסטנדרטיזציה של תהליכי QA."
+
+  "exp_intel_role": "מהנדס תוכנה",
+  "exp_intel_b1": "תכנון ופיתוח עצמאי של תשתית בדיקות אוטומטיות (Coded UI) לסטנדרטיזציה של תהליכי QA.",
+
+  "skill_lang": "שפות ופריימוורקים",
+  "skill_infra": "תשתיות וענן",
+  "skill_data": "נתונים והודעות",
+  "skill_ai": "AI וכלים",
+  "skill_arch": "ארכיטקטורה",
+  "skill_lead": "הובלה",
+
+  "skill_item_ci": "CI/CD (Azure DevOps, GitHub Actions)",
+  "skill_item_rest": "עיצוב REST API",
+  "skill_item_orchestration": "אורקסטרציית סוכנים מרובים",
+  "skill_item_llm": "שילוב LLM / GenAI",
+  "skill_item_prompt": "הנדסת פרומפטים",
+  "skill_item_micro_design": "עיצוב מיקרו-שירותים",
+  "skill_item_design_sys": "מערכות עיצוב",
+  "skill_item_eda": "ארכיטקטורה מונחית אירועים",
+  "skill_item_team_lead": "ראש צוות (צוותים של 10)",
+  "skill_item_review": "סקירת קוד ותקנים",
+  "skill_item_mentoring": "מנטורינג טכני",
+  "skill_item_curriculum": "פיתוח תכניות לימוד",
+
+  "contact_title": "בואו נדבר.",
+  "contact_desc": "פתוח לתפקידי Full-Stack בכיר, ראש צוות ומוביל טכני בתל אביב ובעבודה מרחוק. יצירת קשר ישירה עדיפה.",
+  "contact_email_label": "אימייל",
+  "contact_email_reveal": "לחצו לחשיפה",
+  "contact_phone_label": "טלפון",
+  "contact_location_label": "מיקום",
+  "contact_location_value": "תל אביב, ישראל",
+
+  "footer": "© <time datetime=\"2026\">2026</time> אליצור מירון. כל הזכויות שמורות."
 }
