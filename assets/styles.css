@@ -7,11 +7,17 @@
 }
 
 :root {
+  color-scheme: dark;
   --bg: #060816;
   --bg-2: rgba(11, 18, 32, 0.78);
   --bg-3: rgba(15, 23, 42, 0.9);
   --surface: rgba(10, 15, 27, 0.78);
   --surface-strong: rgba(15, 23, 42, 0.96);
+  --surface-card-top: rgba(15, 23, 42, 0.84);
+  --surface-card-bottom: rgba(10, 15, 27, 0.82);
+  --surface-panel-top: rgba(15, 23, 42, 0.9);
+  --surface-panel-bottom: rgba(10, 15, 27, 0.82);
+  --surface-item: rgba(255, 255, 255, 0.02);
   --accent: #ff8a3d;
   --accent-2: #ffc185;
   --accent-dim: rgba(255, 138, 61, 0.14);
@@ -22,8 +28,52 @@
   --border-accent: rgba(255, 138, 61, 0.34);
   --shadow-lg: 0 28px 80px rgba(2, 6, 23, 0.48);
   --shadow-md: 0 16px 40px rgba(2, 6, 23, 0.3);
+  --page-glow-1: rgba(255, 138, 61, 0.18);
+  --page-glow-2: rgba(56, 189, 248, 0.12);
+  --page-gradient-start: #050816;
+  --page-gradient-mid: #091120;
+  --page-gradient-end: #08101a;
+  --grid-line: rgba(255, 255, 255, 0.03);
+  --nav-bg: rgba(7, 11, 22, 0.72);
+  --selection-bg: rgba(255, 138, 61, 0.85);
+  --selection-text: #08111f;
+  --button-primary-text: #08111f;
   --mono: 'IBM Plex Mono', monospace;
   --sans: 'IBM Plex Sans', sans-serif;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --bg-2: rgba(255, 255, 255, 0.82);
+  --bg-3: rgba(241, 245, 249, 0.92);
+  --surface: rgba(255, 255, 255, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.96);
+  --surface-card-top: rgba(255, 255, 255, 0.96);
+  --surface-card-bottom: rgba(245, 248, 252, 0.96);
+  --surface-panel-top: rgba(255, 255, 255, 0.96);
+  --surface-panel-bottom: rgba(241, 245, 249, 0.96);
+  --surface-item: rgba(248, 250, 252, 0.9);
+  --accent: #d96a21;
+  --accent-2: #ffb779;
+  --accent-dim: rgba(217, 106, 33, 0.1);
+  --text: #0f172a;
+  --text-2: #334155;
+  --text-3: #64748b;
+  --border: rgba(15, 23, 42, 0.1);
+  --border-accent: rgba(217, 106, 33, 0.3);
+  --shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.12);
+  --shadow-md: 0 12px 28px rgba(15, 23, 42, 0.08);
+  --page-glow-1: rgba(255, 138, 61, 0.14);
+  --page-glow-2: rgba(59, 130, 246, 0.1);
+  --page-gradient-start: #fbfdff;
+  --page-gradient-mid: #f5f8fc;
+  --page-gradient-end: #eef3f9;
+  --grid-line: rgba(15, 23, 42, 0.04);
+  --nav-bg: rgba(255, 255, 255, 0.82);
+  --selection-bg: rgba(217, 106, 33, 0.24);
+  --selection-text: #0f172a;
+  --button-primary-text: #0f172a;
 }
 
 html {
@@ -34,9 +84,9 @@ html {
 body {
   position: relative;
   background:
-    radial-gradient(circle at top left, rgba(255, 138, 61, 0.18), transparent 0 30rem),
-    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 0 26rem),
-    linear-gradient(180deg, #050816 0%, #091120 50%, #08101a 100%);
+    radial-gradient(circle at top left, var(--page-glow-1), transparent 0 30rem),
+    radial-gradient(circle at top right, var(--page-glow-2), transparent 0 26rem),
+    linear-gradient(180deg, var(--page-gradient-start) 0%, var(--page-gradient-mid) 50%, var(--page-gradient-end) 100%);
   color: var(--text);
   font-family: var(--sans);
   font-size: 16px;
@@ -53,16 +103,16 @@ body::before {
   pointer-events: none;
   opacity: 0.4;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
   background-size: 42px 42px;
   -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 85%);
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 85%);
 }
 
 ::selection {
-  background: rgba(255, 138, 61, 0.85);
-  color: #08111f;
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 a {
@@ -77,7 +127,7 @@ a {
   z-index: 300;
   padding: 0.7rem 1rem;
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  color: #08111f;
+  color: var(--button-primary-text);
   font-family: var(--mono);
   font-size: 12px;
   text-decoration: none;
@@ -101,7 +151,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0.95rem 1.25rem;
-  background: rgba(7, 11, 22, 0.72);
+  background: var(--nav-bg);
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   border: 1px solid var(--border);
@@ -118,6 +168,46 @@ nav {
   color: var(--accent);
   letter-spacing: 0.05em;
   text-decoration: none;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-strong);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-accent);
+  background: var(--accent-dim);
+}
+
+.theme-toggle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  line-height: 1;
+}
+
+.theme-toggle-label {
+  line-height: 1;
 }
 
 .nav-toggle {
@@ -194,6 +284,7 @@ nav {
 }
 
 .nav-logo:focus-visible,
+.theme-toggle:focus-visible,
 .nav-toggle:focus-visible,
 .nav-links a:focus-visible,
 .btn-primary:focus-visible,
@@ -274,7 +365,7 @@ section {
   padding: 0.45rem 0.8rem;
   border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(11, 18, 32, 0.66);
+  background: var(--surface);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   font-family: var(--mono);
   font-size: 12px;
@@ -347,7 +438,7 @@ h1 span {
   gap: 0.5rem;
   padding: 0.85rem 1.4rem;
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-  color: #08111f;
+  color: var(--button-primary-text);
   font-family: var(--mono);
   font-size: 13px;
   font-weight: 600;
@@ -370,7 +461,7 @@ h1 span {
   padding: 0.85rem 1.4rem;
   border: 1px solid var(--border);
   color: var(--text);
-  background: rgba(11, 18, 32, 0.58);
+  background: var(--surface);
   font-family: var(--mono);
   font-size: 13px;
   letter-spacing: 0.05em;
@@ -399,7 +490,7 @@ h1 span {
   text-align: left;
   border: 1px solid var(--border);
   border-radius: 18px;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.84) 0%, rgba(11, 18, 32, 0.72) 100%);
+  background: linear-gradient(180deg, var(--surface-card-top) 0%, var(--surface-card-bottom) 100%);
   box-shadow: var(--shadow-md);
 }
 
@@ -490,7 +581,7 @@ h2 {
 }
 
 .highlight-card {
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.84) 0%, rgba(10, 15, 27, 0.82) 100%);
+  background: linear-gradient(180deg, var(--surface-card-top) 0%, var(--surface-card-bottom) 100%);
   border: 1px solid var(--border);
   padding: 1.05rem 1.2rem;
   border-radius: 18px;
@@ -535,7 +626,7 @@ h2 {
   padding: 1.4rem 1.5rem;
   border: 1px solid var(--border);
   border-radius: 20px;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.84) 0%, rgba(10, 15, 27, 0.82) 100%);
+  background: linear-gradient(180deg, var(--surface-card-top) 0%, var(--surface-card-bottom) 100%);
   box-shadow: var(--shadow-md);
   position: relative;
 }
@@ -639,7 +730,7 @@ h2 {
 }
 
 .skill-group {
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.84) 0%, rgba(10, 15, 27, 0.82) 100%);
+  background: linear-gradient(180deg, var(--surface-card-top) 0%, var(--surface-card-bottom) 100%);
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 1.3rem;
@@ -682,7 +773,7 @@ h2 {
 
 /* CONTACT */
 .contact-inner {
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(10, 15, 27, 0.82) 100%);
+  background: linear-gradient(135deg, var(--surface-panel-top) 0%, var(--surface-panel-bottom) 100%);
   border: 1px solid var(--border);
   border-radius: 24px;
   padding: 2.25rem;
@@ -718,7 +809,7 @@ h2 {
   padding: 0.85rem 1rem;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--surface-item);
 }
 
 .contact-item:hover {
@@ -851,12 +942,24 @@ h1 {
     padding: 0.9rem 1rem;
   }
 
-  .nav-toggle {
-    display: inline-flex;
+  .nav-actions {
     margin-left: auto;
   }
 
+  .theme-toggle {
+    padding: 0.55rem 0.7rem;
+  }
+
+  .theme-toggle-label {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+  }
+
   .nav-links {
+    order: 3;
     display: none;
     width: 100%;
     flex-direction: column;

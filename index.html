@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -23,12 +23,7 @@
 
   <nav aria-label="Primary">
     <a href="#top" class="nav-logo">EM //</a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
-      aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+
     <ul class="nav-links" id="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -37,11 +32,25 @@
       <li><a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener">LinkedIn</a></li>
       <li><a href="https://github.com/elizurmeiron" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"
+        aria-pressed="false">
+        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-label">Dark</span>
+      </button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+        aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </nav>
 
   <main id="main-content">
     <!-- HERO -->
-  <div class="hero">
+    <div class="hero">
     <div class="hero-top">
       <div class="hero-left">
         <div class="hero-label">Tel Aviv, Israel</div>
