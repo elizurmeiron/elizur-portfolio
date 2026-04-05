@@ -1,39 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" dir="ltr" data-theme="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Portfolio of Elizur Mach, Senior Full-Stack Engineer and Tech Lead specializing in multi-agent AI, TypeScript, and scalable systems.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#060816" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Elizur Mach — Senior Full-Stack Engineer & Tech Lead">
+  <meta property="og:description"
+    content="14+ years building production-grade systems. Multi-agent AI, TypeScript, microservices, team leadership.">
+  <meta property="og:image" content="./assets/my_profile.png">
+  <meta property="og:url" content="https://elizurmeiron.github.io">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Elizur Mach — Senior Full-Stack Engineer & Tech Lead">
+  <meta name="twitter:description"
+    content="14+ years building production-grade systems. Multi-agent AI, TypeScript, microservices, team leadership.">
+  <meta name="twitter:image" content="./assets/my_profile.png">
+
   <title>Elizur Mach — Senior Full-Stack Engineer & Tech Lead</title>
   <link rel="icon" type="image/png" href="./assets/my_profile.png">
   <link rel="apple-touch-icon" href="./assets/my_profile.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Sans+Hebrew:wght@300;400;500;600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elizur Mach",
+    "jobTitle": "Senior Full-Stack Engineer & Tech Lead",
+    "url": "https://elizurmeiron.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/elizur-mach-0b9a7422",
+      "https://github.com/elizurmeiron"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tel Aviv",
+      "addressCountry": "IL"
+    },
+    "knowsAbout": [
+      "TypeScript", "Angular", "React", "Node.js", "Multi-Agent AI",
+      "Microservices", "NestJS", "AWS", "Design Systems"
+    ]
+  }
+  </script>
 </head>
 
 <body id="top">
 
-  <a class="skip-link" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content" data-i18n="skip_link">Skip to content</a>
 
-  <nav aria-label="Primary">
-    <a href="#top" class="nav-logo">EM //</a>
+  <nav aria-label="Primary navigation">
+    <a href="#top" class="nav-logo" aria-label="Elizur Mach — back to top">EM //</a>
 
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://github.com/elizurmeiron" target="_blank" rel="noopener">GitHub</a></li>
+    <ul class="nav-links" id="nav-menu" role="list">
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/elizurmeiron" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></a></li>
     </ul>
 
     <div class="nav-actions">
+      <button class="lang-toggle" type="button" aria-label="עברית — switch to Hebrew" title="עברית — switch to Hebrew">
+        <span class="lang-toggle-label">עב</span>
+      </button>
       <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"
         aria-pressed="false">
         <span class="theme-toggle-icon" aria-hidden="true">☾</span>
@@ -41,410 +86,439 @@
       </button>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
         aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </button>
     </div>
   </nav>
 
   <main id="main-content">
+
     <!-- HERO -->
-    <div class="hero">
-    <div class="hero-top">
-      <div class="hero-left">
-        <div class="hero-label">Tel Aviv, Israel</div>
-        <h1>Elizur<br><span>Mach</span></h1>
-        <p class="hero-desc">
-          Senior Full-Stack Team Lead with 14+ years building production-grade systems and leading engineering teams.
-          Specializes in multi-agent AI orchestration, microservices architecture, and TypeScript full-stack delivery.
-          Background in cybersecurity engineering and elite IDF special forces service.
-        </p>
-        <div class="hero-tags">
-          <span class="tag">Team Lead</span>
-          <span class="tag">Multi-Agent AI</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">React</span>
-          <span class="tag">Angular</span>
-          <span class="tag">NestJS</span>
-          <span class="tag">Microservices</span>
-          <span class="tag">AWS</span>
-          <span class="tag">Cybersecurity</span>
-        </div>
-        <div class="hero-cta">
-          <a href="mailto:elizur.im@gmail.com" class="btn-primary">Get in touch →</a>
-          <a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener"
-            class="btn-secondary">LinkedIn</a>
-          <a href="https://github.com/elizurmeiron" target="_blank" rel="noopener" class="btn-secondary">GitHub</a>
-        </div>
-      </div>
-      <div class="hero-right">
-        <img class="profile-image" src="./assets/my_profile.png" alt="Elizur Mach profile photo" />
-      </div>
-    </div>
-    <div class="stats-bar">
-      <div class="stat">
-        <span class="stat-number">14+</span>
-        <span class="stat-label">Years experience</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">400+</span>
-        <span class="stat-label">Developers mentored</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">20+</span>
-        <span class="stat-label">Systems shipped</span>
-      </div>
-      <div class="stat">
-        <span class="stat-number">F500</span>
-        <span class="stat-label">Client pedigree</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-divider"></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-header">
-      <span class="section-label">01 / About</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          I lead engineering teams and build the systems they ship. Over 14 years I've moved between full-stack
-          development, people leadership, consulting, and AI-augmented development — always staying hands-on in the code
-          while expanding what the team around me can do.
-        </p>
-        <p>
-          At <strong>BMC Software</strong>, I co-led platform development as a two-person founding team and engineered a
-          <strong>multi-agent AI orchestration system</strong> — coordinating specialized agents for autonomous
-          engineering workflows without human intervention. At <strong>Checkmarx</strong>, I worked embedded inside one
-          of the world's leading application security companies, breaking apart a monolith into microservices alongside
-          their DevOps team.
-        </p>
-        <p>
-          As a <strong>Senior Developer &amp; Lecturer at Sela College</strong>, I led a 10-person engineering team,
-          defined technical standards across the organization, and taught advanced React, Node.js, TypeScript, and
-          architecture to 400+ developers — shaping how they think about software, not just how they write it.
-        </p>
-        <p>
-          Before engineering, I served in <strong>Palsar Golani</strong> — the special forces reconnaissance unit of the
-          Golani Brigade. That background shapes how I approach high-stakes engineering work.
-        </p>
-      </div>
-      <div class="about-highlights">
-        <div class="highlight-card">
-          <div class="highlight-title">Multi-Agent AI</div>
-          <div class="highlight-text">Built autonomous agent orchestration at BMC — specialized agents coordinating for
-            complex engineering tasks without human intervention.</div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-title">Cybersecurity Engineering</div>
-          <div class="highlight-text">Contractor at Checkmarx (global AppSec leader) — microservices migration, DevOps
-            collaboration, security-focused engineering culture.</div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-title">Team Leadership</div>
-          <div class="highlight-text">Led 10-person development teams and mentored 400+ developers across corporate and
-            academic environments.</div>
-        </div>
-        <div class="highlight-card">
-          <div class="highlight-title">Palsar Golani — IDF</div>
-          <div class="highlight-text">Special forces infantry reconnaissance unit of the Golani Brigade. IDF disabled
-            veteran.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-header">
-      <span class="section-label">02 / Experience</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="experience-list">
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">10/2024<br>Present</div>
-          <div class="exp-company">BMC Software</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Frontend Infra &amp; Design Systems Engineer — Contractor (via Sela Group)</div>
-          <ul class="exp-bullets">
-            <li>Architected a multi-agent AI orchestration system — coordinating specialized agents for design parsing,
-              architecture planning, code generation, and review, operating autonomously without human intervention.
-            </li>
-            <li>Co-built an enterprise Angular component library from scratch as a two-person team, defining APIs, code
-              standards, and component architecture consumed across enterprise-scale screens.</li>
-            <li>Engineered an AI-powered pipeline integrating Figma Code Connect with an Nx monorepo, generating
-              type-safe screens directly from design references.</li>
+    <header class="hero" id="hero">
+      <div class="hero-top">
+        <div class="hero-left">
+          <p class="hero-label" aria-label="Location: Tel Aviv, Israel" data-i18n="hero_location">Tel Aviv, Israel</p>
+          <h1 class="hero-title">Elizur<br><span>Mach</span></h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Senior Full-Stack Team Lead with 14+ years building production-grade systems and leading engineering teams.
+            Specializes in multi-agent AI orchestration, microservices architecture, and TypeScript full-stack delivery.
+            Background in cybersecurity engineering and elite IDF special forces service.
+          </p>
+          <ul class="hero-tags" role="list" aria-label="Core skills">
+            <li class="tag" data-i18n="tag_team_lead">Team Lead</li>
+            <li class="tag">Multi-Agent AI</li>
+            <li class="tag">TypeScript</li>
+            <li class="tag">Node.js</li>
+            <li class="tag">React</li>
+            <li class="tag">Angular</li>
+            <li class="tag">NestJS</li>
+            <li class="tag" data-i18n="tag_microservices">Microservices</li>
+            <li class="tag">AWS</li>
+            <li class="tag" data-i18n="tag_cybersecurity">Cybersecurity</li>
           </ul>
-          <div class="exp-tech">
-            <span class="tech-chip">TypeScript</span>
-            <span class="tech-chip">Angular</span>
-            <span class="tech-chip">Nx Monorepo</span>
-            <span class="tech-chip">Multi-Agent AI</span>
-            <span class="tech-chip">Claude Code</span>
-            <span class="tech-chip">Figma Code Connect</span>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary js-email-link" data-u="elizur.im" data-d="gmail.com" data-i18n="hero_cta">Get in touch →</a>
+            <a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary">LinkedIn<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></a>
+            <a href="https://github.com/elizurmeiron" target="_blank" rel="noopener noreferrer"
+              class="btn-secondary">GitHub<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img class="profile-image" src="./assets/my_profile.png"
+            alt="Elizur Mach — headshot photo" data-i18n-alt="profile_alt" width="320" height="320" fetchpriority="high" />
+        </div>
+      </div>
+
+      <dl class="stats-bar" aria-label="Career highlights">
+        <div class="stat">
+          <dt class="stat-label" data-i18n="stat_years">Years experience</dt>
+          <dd class="stat-number">14+</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-label" data-i18n="stat_mentored">Developers mentored</dt>
+          <dd class="stat-number">400+</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-label" data-i18n="stat_shipped">Systems shipped</dt>
+          <dd class="stat-number">20+</dd>
+        </div>
+        <div class="stat">
+          <dt class="stat-label" data-i18n="stat_pedigree">Client pedigree</dt>
+          <dd class="stat-number">F500</dd>
+        </div>
+      </dl>
+    </header>
+
+    <div class="section-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-header">
+        <h2 id="about-heading" class="section-label" data-i18n="section_about">01 / About</h2>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about_p1">
+            I lead engineering teams and build the systems they ship. Over 14 years I've moved between full-stack
+            development, people leadership, consulting, and AI-augmented development — always staying hands-on in the
+            code while expanding what the team around me can do.
+          </p>
+          <p data-i18n="about_p2">
+            At <strong>BMC Software</strong>, I co-led platform development as a two-person founding team and engineered
+            a <strong>multi-agent AI orchestration system</strong> — coordinating specialized agents for autonomous
+            engineering workflows without human intervention. At <strong>Checkmarx</strong>, I worked embedded inside one
+            of the world's leading application security companies, breaking apart a monolith into microservices alongside
+            their DevOps team.
+          </p>
+          <p data-i18n="about_p3">
+            As a <strong>Senior Developer &amp; Lecturer at Sela College</strong>, I led a 10-person engineering team,
+            defined technical standards across the organization, and taught advanced React, Node.js, TypeScript, and
+            architecture to 400+ developers — shaping how they think about software, not just how they write it.
+          </p>
+          <p data-i18n="about_p4">
+            Before engineering, I served in <strong>Palsar Golani</strong> — the special forces reconnaissance unit of
+            the Golani Brigade. That background shapes how I approach high-stakes engineering work.
+          </p>
+        </div>
+        <div class="about-highlights" role="list" aria-label="Key highlights">
+          <div class="highlight-card" role="listitem">
+            <h3 class="highlight-title" data-i18n="hl_ai_title">Multi-Agent AI</h3>
+            <p class="highlight-text" data-i18n="hl_ai_text">Built autonomous agent orchestration at BMC — specialized agents coordinating for
+              complex engineering tasks without human intervention.</p>
+          </div>
+          <div class="highlight-card" role="listitem">
+            <h3 class="highlight-title" data-i18n="hl_cyber_title">Cybersecurity Engineering</h3>
+            <p class="highlight-text" data-i18n="hl_cyber_text">Contractor at Checkmarx (global AppSec leader) — microservices migration, DevOps
+              collaboration, security-focused engineering culture.</p>
+          </div>
+          <div class="highlight-card" role="listitem">
+            <h3 class="highlight-title" data-i18n="hl_lead_title">Team Leadership</h3>
+            <p class="highlight-text" data-i18n="hl_lead_text">Led 10-person development teams and mentored 400+ developers across corporate
+              and academic environments.</p>
+          </div>
+          <div class="highlight-card" role="listitem">
+            <h3 class="highlight-title" data-i18n="hl_idf_title">Palsar Golani — <abbr title="Israel Defense Forces">IDF</abbr></h3>
+            <p class="highlight-text" data-i18n="hl_idf_text">Special forces infantry reconnaissance unit of the Golani Brigade. <abbr
+                title="Israel Defense Forces">IDF</abbr> disabled veteran.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">01/2011<br>Present</div>
-          <div class="exp-company">Sela College</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Senior Full-Stack Developer &amp; Lecturer</div>
-          <ul class="exp-bullets">
-            <li>Led and mentored a 10-person development team — code reviews, agile delivery, technical standards —
-              improving project velocity by 30%.</li>
-            <li>Designed and delivered advanced courses in React, Node.js, TypeScript, clean architecture, and Azure to
-              400+ developers with a 95% satisfaction rate.</li>
-            <li>Engineered and deployed 20+ scalable full-stack applications using Node.js, React, and AWS.</li>
-            <li><strong>Checkmarx (07/2018–08/2019):</strong> Contracted to the global AppSec leader — decomposed a
-              large monolith into microservices, collaborated with DevOps on CI/CD, modernized ASPX with React.</li>
-          </ul>
-          <div class="exp-tech">
-            <span class="tech-chip">Node.js</span>
-            <span class="tech-chip">React</span>
-            <span class="tech-chip">TypeScript</span>
-            <span class="tech-chip">AWS</span>
-            <span class="tech-chip">Kafka</span>
-            <span class="tech-chip">Microservices</span>
+    <div class="section-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-header">
+        <h2 id="experience-heading" class="section-label" data-i18n="section_experience">02 / Experience</h2>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="experience-list">
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date">
+              <time datetime="2024-10">10/2024</time><br><span data-i18n="exp_present">Present</span>
+            </div>
+            <p class="exp-company">BMC Software</p>
           </div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">Previous</div>
-          <div class="exp-company">Ituran Tech</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Full-Stack Developer</div>
-          <ul class="exp-bullets">
-            <li>Pioneered React integration into legacy .aspx systems, establishing a modernization path for the
-              frontend codebase.</li>
-            <li>Integrated AI development tools (Cursor, GitHub Copilot) — accelerating team delivery and establishing
-              AI-assisted workflow best practices.</li>
-          </ul>
-          <div class="exp-tech"><span class="tech-chip">React</span><span class="tech-chip">ASP.NET</span><span
-              class="tech-chip">TypeScript</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">Previous</div>
-          <div class="exp-company">Landa</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Full-Stack Developer</div>
-          <ul class="exp-bullets">
-            <li>Led DevOps migration from TFS to Azure DevOps as dedicated developer.</li>
-            <li>Modernized legacy C++ codebase for .NET Core CI/CD pipeline integration — manufacturing systems domain.
-            </li>
-          </ul>
-          <div class="exp-tech"><span class="tech-chip">.NET Core</span><span class="tech-chip">Azure DevOps</span><span
-              class="tech-chip">C++</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">Previous</div>
-          <div class="exp-company">Nucleix</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Full-Stack Developer</div>
-          <ul class="exp-bullets">
-            <li>Built a HIPAA/FDA-compliant production SaaS platform for US biotech operations — Node.js backend,
-              Angular frontend, enterprise security layer for sensitive lab and patient data.</li>
-          </ul>
-          <div class="exp-tech"><span class="tech-chip">Node.js</span><span class="tech-chip">Angular</span><span
-              class="tech-chip">HIPAA</span><span class="tech-chip">SaaS</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">Previous</div>
-          <div class="exp-company">NCR (Retalix)</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Senior Full-Stack Developer</div>
-          <ul class="exp-bullets">
-            <li>Led team developing high-volume retail POS system for major US/Canadian clients — C# and ASP.NET
-              backend.</li>
-            <li>Worked with RabbitMQ for message-queue-based service communication in financial transaction systems.
-            </li>
-            <li>Resolved critical SQL data consistency issues in production financial systems.</li>
-          </ul>
-          <div class="exp-tech"><span class="tech-chip">C#</span><span class="tech-chip">ASP.NET</span><span
-              class="tech-chip">RabbitMQ</span><span class="tech-chip">SQL Server</span></div>
-        </div>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-meta">
-          <div class="exp-date">Previous</div>
-          <div class="exp-company">Intel</div>
-        </div>
-        <div class="exp-content">
-          <div class="exp-role">Software Engineer</div>
-          <ul class="exp-bullets">
-            <li>Designed and developed a Coded UI automated testing framework independently — built reusable testing
-              infrastructure standardizing QA processes across enterprise software.</li>
-          </ul>
-          <div class="exp-tech"><span class="tech-chip">C#</span><span class="tech-chip">Coded UI</span><span
-              class="tech-chip">Test Automation</span></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <div class="section-header">
-      <span class="section-label">03 / Skills</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-group">
-        <div class="skill-group-title">Languages &amp; Frameworks</div>
-        <div class="skill-list">
-          <div class="skill-item">TypeScript / JavaScript</div>
-          <div class="skill-item">Node.js / NestJS</div>
-          <div class="skill-item">React / Angular</div>
-          <div class="skill-item">C# / ASP.NET Core</div>
-          <div class="skill-item">HTML / CSS</div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Infrastructure &amp; Cloud</div>
-        <div class="skill-list">
-          <div class="skill-item">AWS</div>
-          <div class="skill-item">Docker / Kubernetes</div>
-          <div class="skill-item">CI/CD (Azure DevOps, GitHub Actions)</div>
-          <div class="skill-item">Nx Monorepo</div>
-          <div class="skill-item">Unix / Linux</div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Data &amp; Messaging</div>
-        <div class="skill-list">
-          <div class="skill-item">PostgreSQL / MySQL / SQL Server</div>
-          <div class="skill-item">MongoDB / Elasticsearch</div>
-          <div class="skill-item">RabbitMQ</div>
-          <div class="skill-item">Kafka</div>
-          <div class="skill-item">REST API Design</div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">AI &amp; Tooling</div>
-        <div class="skill-list">
-          <div class="skill-item">Multi-Agent Orchestration</div>
-          <div class="skill-item">LLM Integration / GenAI</div>
-          <div class="skill-item">Claude Code / Cursor</div>
-          <div class="skill-item">GitHub Copilot</div>
-          <div class="skill-item">Prompt Engineering</div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Architecture</div>
-        <div class="skill-list">
-          <div class="skill-item">Microservices Design</div>
-          <div class="skill-item">Design Systems</div>
-          <div class="skill-item">Micro-frontends</div>
-          <div class="skill-item">Event-Driven Architecture</div>
-          <div class="skill-item">Clean Architecture</div>
-        </div>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-title">Leadership</div>
-        <div class="skill-list">
-          <div class="skill-item">Team Lead (10-person teams)</div>
-          <div class="skill-item">Code Review &amp; Standards</div>
-          <div class="skill-item">Agile / Scrum</div>
-          <div class="skill-item">Technical Mentoring</div>
-          <div class="skill-item">Curriculum Development</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="section-divider"></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-header">
-      <span class="section-label">04 / Contact</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="contact-inner">
-      <div class="contact-left">
-        <h2>Let's talk.</h2>
-        <p>Open to senior full-stack, team lead, and tech lead roles in Tel Aviv and remote. Direct contact is best — no
-          recruiters needed.</p>
-      </div>
-      <div class="contact-items">
-        <a href="mailto:elizur.im@gmail.com" class="contact-item">
-          <div class="contact-icon">@</div>
-          <div class="contact-detail">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">elizur.im@gmail.com</span>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_bmc_role">Frontend Infra &amp; Design Systems Engineer — Contractor (via Sela Group)</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_bmc_b1">Architected a multi-agent AI orchestration system — coordinating specialized agents for design parsing,
+                architecture planning, code generation, and review, operating autonomously without human intervention.
+              </li>
+              <li data-i18n="exp_bmc_b2">Co-built an enterprise Angular component library from scratch as a two-person team, defining APIs, code
+                standards, and component architecture consumed across enterprise-scale screens.</li>
+              <li data-i18n="exp_bmc_b3">Engineered an AI-powered pipeline integrating Figma Code Connect with an Nx monorepo, generating
+                type-safe screens directly from design references.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">TypeScript</li>
+              <li class="tech-chip">Angular</li>
+              <li class="tech-chip">Nx Monorepo</li>
+              <li class="tech-chip">Multi-Agent AI</li>
+              <li class="tech-chip">Claude Code</li>
+              <li class="tech-chip">Figma Code Connect</li>
+            </ul>
           </div>
-        </a>
-        <a href="tel:+972528833762" class="contact-item">
-          <div class="contact-icon">#</div>
-          <div class="contact-detail">
-            <span class="contact-label">Phone</span>
-            <span class="contact-value">052-883-3762</span>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date">
+              <time datetime="2011-01">01/2011</time><br><span data-i18n="exp_present">Present</span>
+            </div>
+            <p class="exp-company">Sela College</p>
           </div>
-        </a>
-        <a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener" class="contact-item">
-          <div class="contact-icon">in</div>
-          <div class="contact-detail">
-            <span class="contact-label">LinkedIn</span>
-            <span class="contact-value">elizur-mach-0b9a7422</span>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_sela_role">Senior Full-Stack Developer &amp; Lecturer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_sela_b1">Led and mentored a 10-person development team — code reviews, agile delivery, technical standards —
+                improving project velocity by 30%.</li>
+              <li data-i18n="exp_sela_b2">Designed and delivered advanced courses in React, Node.js, TypeScript, clean architecture, and Azure to
+                400+ developers with a 95% satisfaction rate.</li>
+              <li data-i18n="exp_sela_b3">Engineered and deployed 20+ scalable full-stack applications using Node.js, React, and AWS.</li>
+              <li data-i18n="exp_sela_b4"><strong>Checkmarx (<time datetime="2018-07">07/2018</time>–<time datetime="2019-08">08/2019</time>):</strong>
+                Contracted to the global AppSec leader — decomposed a large monolith into microservices, collaborated
+                with DevOps on CI/CD, modernized ASPX with React.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">Node.js</li>
+              <li class="tech-chip">React</li>
+              <li class="tech-chip">TypeScript</li>
+              <li class="tech-chip">AWS</li>
+              <li class="tech-chip">Kafka</li>
+              <li class="tech-chip">Microservices</li>
+            </ul>
           </div>
-        </a>
-        <a href="https://github.com/elizurmeiron" target="_blank" rel="noopener" class="contact-item">
-          <div class="contact-icon">&lt;/&gt;</div>
-          <div class="contact-detail">
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">elizurmeiron</span>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date" data-i18n="exp_previous">Previous</div>
+            <p class="exp-company">Ituran Tech</p>
           </div>
-        </a>
-        <div class="contact-item contact-item-static">
-          <div class="contact-icon">//</div>
-          <div class="contact-detail">
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Tel Aviv, Israel</span>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_ituran_role">Full-Stack Developer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_ituran_b1">Pioneered React integration into legacy .aspx systems, establishing a modernization path for the
+                frontend codebase.</li>
+              <li data-i18n="exp_ituran_b2">Integrated AI development tools (Cursor, GitHub Copilot) — accelerating team delivery and establishing
+                AI-assisted workflow best practices.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">React</li>
+              <li class="tech-chip">ASP.NET</li>
+              <li class="tech-chip">TypeScript</li>
+            </ul>
           </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date" data-i18n="exp_previous">Previous</div>
+            <p class="exp-company">Landa</p>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_landa_role">Full-Stack Developer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_landa_b1">Led DevOps migration from TFS to Azure DevOps as dedicated developer.</li>
+              <li data-i18n="exp_landa_b2">Modernized legacy C++ codebase for .NET Core CI/CD pipeline integration — manufacturing systems
+                domain.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">.NET Core</li>
+              <li class="tech-chip">Azure DevOps</li>
+              <li class="tech-chip">C++</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date" data-i18n="exp_previous">Previous</div>
+            <p class="exp-company">Nucleix</p>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_nucleix_role">Full-Stack Developer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_nucleix_b1">Built a <abbr title="Health Insurance Portability and Accountability Act">HIPAA</abbr>/<abbr
+                  title="Food and Drug Administration">FDA</abbr>-compliant production SaaS platform for US biotech
+                operations — Node.js backend, Angular frontend, enterprise security layer for sensitive lab and patient
+                data.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">Node.js</li>
+              <li class="tech-chip">Angular</li>
+              <li class="tech-chip">HIPAA</li>
+              <li class="tech-chip">SaaS</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date" data-i18n="exp_previous">Previous</div>
+            <p class="exp-company"><abbr title="NCR Corporation (formerly Retalix)">NCR</abbr> (Retalix)</p>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_ncr_role">Senior Full-Stack Developer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_ncr_b1">Led team developing high-volume retail <abbr title="Point of Sale">POS</abbr> system for major
+                US/Canadian clients — C# and ASP.NET backend.</li>
+              <li data-i18n="exp_ncr_b2">Worked with RabbitMQ for message-queue-based service communication in financial transaction systems.
+              </li>
+              <li data-i18n="exp_ncr_b3">Resolved critical SQL data consistency issues in production financial systems.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">C#</li>
+              <li class="tech-chip">ASP.NET</li>
+              <li class="tech-chip">RabbitMQ</li>
+              <li class="tech-chip">SQL Server</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-date" data-i18n="exp_previous">Previous</div>
+            <p class="exp-company">Intel</p>
+          </div>
+          <div class="exp-content">
+            <h3 class="exp-role" data-i18n="exp_intel_role">Software Engineer</h3>
+            <ul class="exp-bullets">
+              <li data-i18n="exp_intel_b1">Designed and developed a Coded UI automated testing framework independently — built reusable testing
+                infrastructure standardizing QA processes across enterprise software.</li>
+            </ul>
+            <ul class="exp-tech" aria-label="Technologies used">
+              <li class="tech-chip">C#</li>
+              <li class="tech-chip">Coded UI</li>
+              <li class="tech-chip">Test Automation</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="section-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <h2 id="skills-heading" class="section-label" data-i18n="section_skills">03 / Skills</h2>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_lang">Languages &amp; Frameworks</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item">TypeScript / JavaScript</li>
+            <li class="skill-item">Node.js / NestJS</li>
+            <li class="skill-item">React / Angular</li>
+            <li class="skill-item">C# / ASP.NET Core</li>
+            <li class="skill-item">HTML / CSS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_infra">Infrastructure &amp; Cloud</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item">AWS</li>
+            <li class="skill-item">Docker / Kubernetes</li>
+            <li class="skill-item" data-i18n="skill_item_ci">CI/CD (Azure DevOps, GitHub Actions)</li>
+            <li class="skill-item">Nx Monorepo</li>
+            <li class="skill-item">Unix / Linux</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_data">Data &amp; Messaging</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item">PostgreSQL / MySQL / SQL Server</li>
+            <li class="skill-item">MongoDB / Elasticsearch</li>
+            <li class="skill-item">RabbitMQ</li>
+            <li class="skill-item">Kafka</li>
+            <li class="skill-item" data-i18n="skill_item_rest">REST API Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_ai">AI &amp; Tooling</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item" data-i18n="skill_item_orchestration">Multi-Agent Orchestration</li>
+            <li class="skill-item" data-i18n="skill_item_llm">LLM Integration / GenAI</li>
+            <li class="skill-item">Claude Code / Cursor</li>
+            <li class="skill-item">GitHub Copilot</li>
+            <li class="skill-item" data-i18n="skill_item_prompt">Prompt Engineering</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_arch">Architecture</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item" data-i18n="skill_item_micro_design">Microservices Design</li>
+            <li class="skill-item" data-i18n="skill_item_design_sys">Design Systems</li>
+            <li class="skill-item">Micro-frontends</li>
+            <li class="skill-item" data-i18n="skill_item_eda">Event-Driven Architecture</li>
+            <li class="skill-item">Clean Architecture</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title" data-i18n="skill_lead">Leadership</h3>
+          <ul class="skill-list" role="list">
+            <li class="skill-item" data-i18n="skill_item_team_lead">Team Lead (10-person teams)</li>
+            <li class="skill-item" data-i18n="skill_item_review">Code Review &amp; Standards</li>
+            <li class="skill-item">Agile / Scrum</li>
+            <li class="skill-item" data-i18n="skill_item_mentoring">Technical Mentoring</li>
+            <li class="skill-item" data-i18n="skill_item_curriculum">Curriculum Development</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <div class="section-divider" role="separator" aria-hidden="true"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h2 id="contact-heading" class="section-label" data-i18n="section_contact">04 / Contact</h2>
+        <div class="section-line" aria-hidden="true"></div>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-left">
+          <h3 class="contact-title" data-i18n="contact_title">Let's talk.</h3>
+          <p data-i18n="contact_desc">Open to senior full-stack, team lead, and tech lead roles in Tel Aviv and remote. Direct contact is best —
+            no recruiters needed.</p>
+        </div>
+        <address class="contact-items" aria-label="Contact methods">
+          <a href="#contact" class="contact-item js-email-link" data-u="elizur.im" data-d="gmail.com">
+            <span class="contact-icon" aria-hidden="true">@</span>
+            <span class="contact-detail">
+              <span class="contact-label" data-i18n="contact_email_label">Email</span>
+              <span class="contact-value js-email-text" data-i18n="contact_email_reveal">Click to reveal</span>
+            </span>
+          </a>
+          <a href="tel:+972528833762" class="contact-item">
+            <span class="contact-icon" aria-hidden="true">#</span>
+            <span class="contact-detail">
+              <span class="contact-label" data-i18n="contact_phone_label">Phone</span>
+              <span class="contact-value">052-883-3762</span>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/elizur-mach-0b9a7422" target="_blank" rel="noopener noreferrer"
+            class="contact-item">
+            <span class="contact-icon" aria-hidden="true">in</span>
+            <span class="contact-detail">
+              <span class="contact-label">LinkedIn<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></span>
+              <span class="contact-value">elizur-mach-0b9a7422</span>
+            </span>
+          </a>
+          <a href="https://github.com/elizurmeiron" target="_blank" rel="noopener noreferrer" class="contact-item">
+            <span class="contact-icon" aria-hidden="true">&lt;/&gt;</span>
+            <span class="contact-detail">
+              <span class="contact-label">GitHub<span class="sr-only" data-i18n="sr_new_tab"> (opens in new tab)</span></span>
+              <span class="contact-value">elizurmeiron</span>
+            </span>
+          </a>
+          <span class="contact-item contact-item-static">
+            <span class="contact-icon" aria-hidden="true">//</span>
+            <span class="contact-detail">
+              <span class="contact-label" data-i18n="contact_location_label">Location</span>
+              <span class="contact-value" data-i18n="contact_location_value">Tel Aviv, Israel</span>
+            </span>
+          </span>
+        </address>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <span>Elizur Mach — elizur.im@gmail.com — Tel Aviv, Israel</span>
+    <p data-i18n="footer">&copy; <time datetime="2026">2026</time> Elizur Mach. All rights reserved.</p>
   </footer>
 
-  <script src="./assets/script.js"></script>
+  <script src="./assets/script.js" defer></script>
 </body>
 
 </html>

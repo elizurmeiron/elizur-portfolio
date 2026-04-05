@@ -1,0 +1,103 @@
+{
+  "nav_about": "About",
+  "nav_experience": "Experience",
+  "nav_skills": "Skills",
+  "nav_contact": "Contact",
+  "sr_new_tab": " (opens in new tab)",
+  "skip_link": "Skip to content",
+
+  "hero_location": "Tel Aviv, Israel",
+  "hero_desc": "Senior Full-Stack Team Lead with 14+ years building production-grade systems and leading engineering teams. Specializes in multi-agent AI orchestration, microservices architecture, and TypeScript full-stack delivery. Background in cybersecurity engineering and elite IDF special forces service.",
+  "tag_team_lead": "Team Lead",
+  "tag_microservices": "Microservices",
+  "tag_cybersecurity": "Cybersecurity",
+  "hero_cta": "Get in touch →",
+  "profile_alt": "Elizur Mach — headshot photo",
+
+  "stat_years": "Years experience",
+  "stat_mentored": "Developers mentored",
+  "stat_shipped": "Systems shipped",
+  "stat_pedigree": "Client pedigree",
+
+  "section_about": "01 / About",
+  "section_experience": "02 / Experience",
+  "section_skills": "03 / Skills",
+  "section_contact": "04 / Contact",
+
+  "about_p1": "I lead engineering teams and build the systems they ship. Over 14 years I've moved between full-stack development, people leadership, consulting, and AI-augmented development — always staying hands-on in the code while expanding what the team around me can do.",
+  "about_p2": "At <strong>BMC Software</strong>, I co-led platform development as a two-person founding team and engineered a <strong>multi-agent AI orchestration system</strong> — coordinating specialized agents for autonomous engineering workflows without human intervention. At <strong>Checkmarx</strong>, I worked embedded inside one of the world's leading application security companies, breaking apart a monolith into microservices alongside their DevOps team.",
+  "about_p3": "As a <strong>Senior Developer &amp; Lecturer at Sela College</strong>, I led a 10-person engineering team, defined technical standards across the organization, and taught advanced React, Node.js, TypeScript, and architecture to 400+ developers — shaping how they think about software, not just how they write it.",
+  "about_p4": "Before engineering, I served in <strong>Palsar Golani</strong> — the special forces reconnaissance unit of the Golani Brigade. That background shapes how I approach high-stakes engineering work.",
+
+  "hl_ai_title": "Multi-Agent AI",
+  "hl_ai_text": "Built autonomous agent orchestration at BMC — specialized agents coordinating for complex engineering tasks without human intervention.",
+  "hl_cyber_title": "Cybersecurity Engineering",
+  "hl_cyber_text": "Contractor at Checkmarx (global AppSec leader) — microservices migration, DevOps collaboration, security-focused engineering culture.",
+  "hl_lead_title": "Team Leadership",
+  "hl_lead_text": "Led 10-person development teams and mentored 400+ developers across corporate and academic environments.",
+  "hl_idf_title": "Palsar Golani — <abbr title=\"Israel Defense Forces\">IDF</abbr>",
+  "hl_idf_text": "Special forces infantry reconnaissance unit of the Golani Brigade. <abbr title=\"Israel Defense Forces\">IDF</abbr> disabled veteran.",
+
+  "exp_present": "Present",
+  "exp_previous": "Previous",
+
+  "exp_bmc_role": "Frontend Infra & Design Systems Engineer — Contractor (via Sela Group)",
+  "exp_bmc_b1": "Architected a multi-agent AI orchestration system — coordinating specialized agents for design parsing, architecture planning, code generation, and review, operating autonomously without human intervention.",
+  "exp_bmc_b2": "Co-built an enterprise Angular component library from scratch as a two-person team, defining APIs, code standards, and component architecture consumed across enterprise-scale screens.",
+  "exp_bmc_b3": "Engineered an AI-powered pipeline integrating Figma Code Connect with an Nx monorepo, generating type-safe screens directly from design references.",
+
+  "exp_sela_role": "Senior Full-Stack Developer & Lecturer",
+  "exp_sela_b1": "Led and mentored a 10-person development team — code reviews, agile delivery, technical standards — improving project velocity by 30%.",
+  "exp_sela_b2": "Designed and delivered advanced courses in React, Node.js, TypeScript, clean architecture, and Azure to 400+ developers with a 95% satisfaction rate.",
+  "exp_sela_b3": "Engineered and deployed 20+ scalable full-stack applications using Node.js, React, and AWS.",
+  "exp_sela_b4": "<strong>Checkmarx (<time datetime=\"2018-07\">07/2018</time>–<time datetime=\"2019-08\">08/2019</time>):</strong> Contracted to the global AppSec leader — decomposed a large monolith into microservices, collaborated with DevOps on CI/CD, modernized ASPX with React.",
+
+  "exp_ituran_role": "Full-Stack Developer",
+  "exp_ituran_b1": "Pioneered React integration into legacy .aspx systems, establishing a modernization path for the frontend codebase.",
+  "exp_ituran_b2": "Integrated AI development tools (Cursor, GitHub Copilot) — accelerating team delivery and establishing AI-assisted workflow best practices.",
+
+  "exp_landa_role": "Full-Stack Developer",
+  "exp_landa_b1": "Led DevOps migration from TFS to Azure DevOps as dedicated developer.",
+  "exp_landa_b2": "Modernized legacy C++ codebase for .NET Core CI/CD pipeline integration — manufacturing systems domain.",
+
+  "exp_nucleix_role": "Full-Stack Developer",
+  "exp_nucleix_b1": "Built a <abbr title=\"Health Insurance Portability and Accountability Act\">HIPAA</abbr>/<abbr title=\"Food and Drug Administration\">FDA</abbr>-compliant production SaaS platform for US biotech operations — Node.js backend, Angular frontend, enterprise security layer for sensitive lab and patient data.",
+
+  "exp_ncr_role": "Senior Full-Stack Developer",
+  "exp_ncr_b1": "Led team developing high-volume retail <abbr title=\"Point of Sale\">POS</abbr> system for major US/Canadian clients — C# and ASP.NET backend.",
+  "exp_ncr_b2": "Worked with RabbitMQ for message-queue-based service communication in financial transaction systems.",
+  "exp_ncr_b3": "Resolved critical SQL data consistency issues in production financial systems.",
+
+  "exp_intel_role": "Software Engineer",
+  "exp_intel_b1": "Designed and developed a Coded UI automated testing framework independently — built reusable testing infrastructure standardizing QA processes across enterprise software.",
+
+  "skill_lang": "Languages & Frameworks",
+  "skill_infra": "Infrastructure & Cloud",
+  "skill_data": "Data & Messaging",
+  "skill_ai": "AI & Tooling",
+  "skill_arch": "Architecture",
+  "skill_lead": "Leadership",
+
+  "skill_item_ci": "CI/CD (Azure DevOps, GitHub Actions)",
+  "skill_item_rest": "REST API Design",
+  "skill_item_orchestration": "Multi-Agent Orchestration",
+  "skill_item_llm": "LLM Integration / GenAI",
+  "skill_item_prompt": "Prompt Engineering",
+  "skill_item_micro_design": "Microservices Design",
+  "skill_item_design_sys": "Design Systems",
+  "skill_item_eda": "Event-Driven Architecture",
+  "skill_item_team_lead": "Team Lead (10-person teams)",
+  "skill_item_review": "Code Review & Standards",
+  "skill_item_mentoring": "Technical Mentoring",
+  "skill_item_curriculum": "Curriculum Development",
+
+  "contact_title": "Let's talk.",
+  "contact_desc": "Open to senior full-stack, team lead, and tech lead roles in Tel Aviv and remote. Direct contact is best — no recruiters needed.",
+  "contact_email_label": "Email",
+  "contact_email_reveal": "Click to reveal",
+  "contact_phone_label": "Phone",
+  "contact_location_label": "Location",
+  "contact_location_value": "Tel Aviv, Israel",
+
+  "footer": "© <time datetime=\"2026\">2026</time> Elizur Mach. All rights reserved."
+}
